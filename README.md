@@ -1,2 +1,2 @@
 # test-repo
-test mcp server
+test mcp server file updates
