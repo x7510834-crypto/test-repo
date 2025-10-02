@@ -13,12 +13,7 @@ public class FirstController {
     @GetMapping("/first")
     public String first() {
         logger.info("FirstController accessed");
-        try {
-            int result = 10 / 0;
-        } catch (Exception e) {
-            logger.error("Exception in FirstController", e);
-            throw e;
-        }
+        int result = 10 / 0;
         return "First Controller";
     }
 }
