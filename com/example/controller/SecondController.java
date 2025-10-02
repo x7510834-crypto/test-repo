@@ -17,7 +17,7 @@ public class SecondController {
             String a = "test";
             String b = null;
             if(a != null) {
-                b.length();
+return b;
             }
             return b;
         } catch (Exception e) {
