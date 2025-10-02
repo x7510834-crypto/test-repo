@@ -14,12 +14,9 @@ public class SecondController {
     public String second() {
         logger.info("SecondController accessed");
         try {
-            String a = "test";
-            String b = null;
-            if(a != null) {
-return b;
-            }
-            return b;
+            String str = null;
+            str.length();
+            return str;
         } catch (Exception e) {
             logger.error("Exception in SecondController", e);
             throw e;
