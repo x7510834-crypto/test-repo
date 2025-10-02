@@ -23,7 +23,7 @@ public class SecondController {
                 if(b != null) {
                     if(c !=null) {
                         if(d != null) {
-                            if (b != null) { b.length(); }
+                             e.length(); 
                         }
                     }
                 }
