@@ -15,9 +15,19 @@ public class SecondController {
         logger.info("SecondController accessed");
         try {
             String a = "test";
-            String b =null;
+            String b = "test";
+            String c = "test";
+            String d = "test";
+            String e = null;
             if(a != null) {
-                if (b != null) { b.length(); }
+                if(b != null) {
+                    if(c !=null) {
+                        if(d != null) {
+                            e.length();
+                        }
+                    }
+                }
+                b.length();
             }
             return b;
         } catch (Exception e) {
