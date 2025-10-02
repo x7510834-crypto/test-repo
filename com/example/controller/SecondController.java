@@ -10,15 +10,16 @@ public class SecondController {
 
     private static final Logger logger = LoggerFactory.getLogger(SecondController.class);
 
-    @GetMapping("/second")
+     @GetMapping("/second")
     public String second() {
         logger.info("SecondController accessed");
         try {
-            String str = null;
-if (str.length() > 0) {
-                str.length();
+            String a = "test";
+            String b = null;
+            if(a != null) {
+                b.length();
             }
-            return str;
+            return b;
         } catch (Exception e) {
             logger.error("Exception in SecondController", e);
             throw e;
