@@ -14,11 +14,7 @@ public class FirstController {
     public String first() {
         logger.info("FirstController accessed");
         try {
-            try {
-                int result = 10 / 0;
-            } catch (ArithmeticException e) {
-                // Handle the ArithmeticException
-            }
+            int result = 10 / 0;
         } catch (Exception e) {
             logger.error("Exception in FirstController", e);
             throw e;
