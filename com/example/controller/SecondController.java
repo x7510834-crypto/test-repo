@@ -23,7 +23,9 @@ public class SecondController {
                 if(b != null) {
                     if(c !=null) {
                         if(d != null) {
-                             variable.length();
+                             if (variable != null) {
+                               variable.length();
+                             }
                         }
                     }
                 }
