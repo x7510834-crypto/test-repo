@@ -13,7 +13,12 @@ public class FirstController {
     @GetMapping("/first")
     public String first() {
         logger.info("FirstController accessed");
-        int result = 10 / 0;
+        try {
+            int result = 10 / 0;
+        } catch (ArithmeticException e) {
+            // Handle ArithmeticException appropriately.  For example, log the error or return a default value.
+            System.err.println("ArithmeticException occurred: " + e.getMessage());
+        }
         return "First Controller";
     }
 }
