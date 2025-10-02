@@ -23,7 +23,14 @@ public class SecondController {
                 if(b != null) {
                     if(c !=null) {
                         if(d != null) {
-                            variable.length();
+                            if (variable != null) {
+                                int length = variable.length();
+                                // ... rest of the code
+                            } else {
+                                // Handle the case where the variable is null
+                                // For example, log an error or return a default value
+                                System.err.println("Error: Variable is null");
+                            }
                         }
                     }
                 }
